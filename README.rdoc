@@ -1,6 +1,6 @@
 = css_filter
 
-Description goes here.
+A little utility to clean up unused css from your rails project.
 
 == Contributing to css_filter
  
