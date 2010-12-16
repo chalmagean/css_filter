@@ -15,8 +15,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "css_filter"
   gem.homepage = "http://github.com/mixandgo/css_filter"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Clean up dead css code}
+  gem.description = %Q{A little utility to clean up unused css from your rails project}
   gem.email = "cezar@mixandgo.com"
   gem.authors = ["Cezar Halmagean"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
