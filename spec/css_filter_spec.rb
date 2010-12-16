@@ -40,3 +40,16 @@ describe CSSFilter, "#css_files" do
     end
   end
 end
+
+describe CSSFilter, "#css_code" do
+  before(:each) do
+    @css_filter = CSSFilter.new('/test')
+  end
+  
+  it "should put all the css code together" do
+    @css_filter.should_receive(:css_files).and_return(['test1.css', 'test2.css'])
+    File.stub!(:read).with('test1.css').and_return("body1")
+    File.stub!(:read).with('test2.css').and_return("body2")
+    @css_filter.css_code.should eq("body1body2")
+  end
+end

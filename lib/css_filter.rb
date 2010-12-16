@@ -11,4 +11,13 @@ class CSSFilter
   def css_files
     Dir.glob("#{css_dir}/*.css")
   end
+  
+  def css_code
+    css_code = ""
+    css_files.each do |f|
+      css_code += File.read(f)
+    end
+    
+    css_code
+  end
 end
